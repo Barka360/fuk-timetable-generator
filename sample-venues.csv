@@ -1,0 +1,3 @@
+name,capacity,type,location,description,active
+FCLT 1,500,classroom,Permanent site,Five Hundred Capacity Lecture Theatre,true
+MCB LAB,30,laboratory,Permanent site,Microbiology Laboratory,true

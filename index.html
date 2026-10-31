@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#123d32" />
+  <title>FUK Timetable Office</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cloud.css" />
+</head>
+<body>
+  <section id="authGate" class="auth-gate" hidden>
+    <div class="auth-card">
+      <div class="brand-mark">F</div>
+      <span class="eyebrow">FEDERAL UNIVERSITY OF KASHERE</span>
+      <h1>Timetable Office</h1>
+      <p id="authMessage">Sign in with an account issued by the timetable administrator.</p>
+      <form id="signInForm">
+        <label class="field"><span>Email address</span><input id="signInEmail" type="email" autocomplete="username" required></label>
+        <label class="field"><span>Password</span><input id="signInPassword" type="password" autocomplete="current-password" required></label>
+        <button class="button primary" type="submit">Sign in</button>
+        <p id="authError" class="auth-error" role="alert"></p>
+      </form>
+      <small>Access is limited to staff accounts created by the administrator.</small>
+    </div>
+  </section>
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">F</div><div><strong>FUK</strong><small>Timetable Office</small></div></div>
+    <div class="side-label">WORKSPACE</div>
+    <nav id="navigation">
+      <button class="nav-item active" data-page="dashboard"><span>◫</span> Overview</button>
+      <button class="nav-item" data-page="schedule"><span>▦</span> Timetables</button>
+      <button class="nav-item" data-page="courses"><span>▤</span> Courses</button>
+      <button class="nav-item" data-page="venues"><span>⌂</span> Venues</button>
+      <button class="nav-item" data-page="structure"><span>◎</span> Faculties &amp; departments</button>
+      <button class="nav-item" data-page="reports"><span>▥</span> Reports &amp; data</button>
+      <button class="nav-item" data-page="settings"><span>⚙</span> Academic settings</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="session-chip"><i></i><span id="sideSession">2026/2027 · First semester</span></div><small>Federal University of Kashere</small></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><span class="eyebrow" id="breadcrumb">WORKSPACE / OVERVIEW</span><h1 id="pageTitle">Overview</h1></div><div class="top-actions"><span class="storage-state" id="storageState"><i></i> Shared workspace</span><button class="button" id="signOut">Sign out</button><button class="button primary" id="quickGenerate">＋ Generate timetable</button></div></header>
+    <section id="app" class="content"></section>
+  </main>
+  <div id="modalRoot"></div>
+  <div id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>

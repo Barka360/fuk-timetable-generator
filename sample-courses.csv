@@ -1,0 +1,3 @@
+code,title,department,faculty,level,cohort,students,lecturer,duration,venueType
+CSC101,Introduction to Computing,Computer Science,Faculty of Science,100,Computer Science 100,85,Dr Example,1,classroom
+BIO201,Cell Biology,Biological Sciences,Faculty of Science,200,Biology 200,42,Dr Example,1,laboratory
